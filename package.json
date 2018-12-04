@@ -1,0 +1,33 @@
+{
+  "name": "@gyselroth/node-sidebar",
+  "version": "1.0.0-alpha1",
+  "description": "Manage sidebar bookmarks (folder favourites), compatible on Linux, Windows and OS X",
+  "main": "lib/main.js",
+  "scripts": {
+    "compile": "node-gyp rebuild",
+    "start": "node lib/main.js",
+    "test": "node tests/index.js",
+    "install": "node-gyp rebuild"
+  },
+  "keywords": [],
+  "author": "Raffael Sahli <sahli@gyselroth.com>",
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {
+    "node-gyp": "^3.6.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyselroth/node-sidebar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gyselroth/node-sidebar/issues"
+  },
+  "homepage": "https://github.com/gyselroth/node-sidebar#readme"
+}
