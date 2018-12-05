@@ -103,7 +103,7 @@ napi_value getItems(napi_env env, napi_callback_info info) {
   napi_value items;
   napi_create_array(env, &items);
 
-  for( unsigned int a = 0; a < sizeof(list); a = a + 1 ) {
+  for( unsigned int a = 0; a < CFArrayGetCount(list); a = a + 1 ) {
     LSSharedFileListItemRef sflItemRef = (LSSharedFileListItemRef) CFArrayGetValueAtIndex(list, a);
     CFStringRef name = (CFStringRef)LSSharedFileListItemCopyDisplayName(sflItemRef);
 
