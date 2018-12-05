@@ -1,7 +1,7 @@
 {
-  "name": "@gyselroth/node-sidebar",
+  "name": "@gyselroth/node-advanced-desktop",
   "version": "1.0.0-alpha1",
-  "description": "Manage sidebar bookmarks (folder favourites), compatible on Linux, Windows and OS X",
+  "description": "Manage sidebar bookmarks (folder favourites) and folder icons compatible on Linux, Windows and OS X",
   "main": "lib/main.js",
   "scripts": {
     "compile": "node-gyp rebuild",

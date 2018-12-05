@@ -1,10 +1,14 @@
 {
   "targets": [
     {
-      "libraries": [ "-framework CoreServices" ],
       "include_dirs": [],
       "target_name": "addon",
-      "sources": [ "src/main.cpp" ]
+      "conditions": [
+        ['OS=="mac"', {
+          "sources": [ "src/main.cpp" ],
+          "libraries": [ "-framework CoreServices" ],
+        }],
+      ],
     }
   ]
 }
