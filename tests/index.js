@@ -1,12 +1,25 @@
+const os = require('os');
+const path = require('path');
 const { sidebar, nodeIcon } = require('../lib/main.js');
-console.log(sidebar);
+const fs = require('fs');
+
+var testdir = path.join(os.tmpdir(), 'foobar');
+
+if(!fs.existsSync(testdir)) {
+  fs.mkdirSync(testdir);
+}
 
 sidebar.getItems().then((result) => {
   console.log(result);
 });
 
-sidebar.addItem('C:\Users\Raffael\Balloon\build', {
-  clsId: "05C645AA-6AA4-406B-B033-9142E21ECC5F"
+var icon = process.platform === 'win32' ? 'icon.ico' : 'icon.png';
+icon = path.resolve(icon);
+
+sidebar.addItem(testdir, {
+  clsId: "61736CCB-50DB-4095-BF4C-186BB668432C",
+  name: "foobar",
+  icon: icon
 });
 
-nodeIcon.setFolderIcon('/Users/testuser/Balloon/test', '/Users/testuser/dev/balloon-client-desktop/resources/diricon/icon.png').catch((err) => {console.log(err);})
+nodeIcon.setFolderIcon(testdir, icon).catch((err) => {console.log(err);})
