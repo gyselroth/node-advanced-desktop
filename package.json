@@ -1,6 +1,6 @@
 {
   "name": "@gyselroth/node-advanced-desktop",
-  "version": "1.0.0-alpha1",
+  "version": "1.0.0",
   "description": "Manage sidebar bookmarks (folder favourites) and folder icons compatible on Linux, Windows and OS X",
   "main": "lib/main.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "node tests/index.js",
     "install": "node-gyp rebuild"
   },
-  "keywords": [],
+  "keywords": ["desktop", "favourites", "bookmarks", "icon", "diricon"],
   "author": "Raffael Sahli <sahli@gyselroth.com>",
   "license": "MIT",
   "gypfile": true,
