@@ -1,0 +1,16 @@
+osx_image: xcode8.3
+dist: trusty
+sudo: false
+language: node_js
+node_js: '10'
+os:
+- linux
+- osx
+notifications:
+  email: false
+install:
+  - npm install
+before_script: npm update
+script:
+  - npm run compile
+  - npm run test

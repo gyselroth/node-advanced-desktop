@@ -1,18 +1,16 @@
 environment:
   matrix:
-    - nodejs_version: '8'
-
+    - nodejs_version: '10'
 version: "{build}"
 build: off
 deploy: off
 matrix:
   fast_finish: true
-
 install:
   - ps: Install-Product node $env:nodejs_version x64
   - npm set progress=false
   - npm prune
   - npm install
-
+  - npm run compile
 test_script:
   - npm run test

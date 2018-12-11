@@ -16,9 +16,8 @@ sidebar.getItems().then((result) => {
 var icon = process.platform === 'win32' ? 'icon.ico' : 'icon.png';
 icon = path.resolve(__dirname, icon);
 
-sidebar.addItem(testdir, {
+sidebar.ensureItem(testdir, {
   clsId: "61736CCB-50DB-4095-BF4C-186BB668432C",
-  name: "foobar",
   icon: icon
 });
 
