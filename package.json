@@ -1,6 +1,6 @@
 {
   "name": "@gyselroth/node-advanced-desktop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Manage sidebar bookmarks (folder favourites) and folder icons compatible on Linux, Windows and OS X",
   "main": "lib/main.js",
   "scripts": {
