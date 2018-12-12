@@ -9,7 +9,13 @@
     "test": "node tests/index.js",
     "install": "node-gyp rebuild"
   },
-  "keywords": ["desktop", "favourites", "bookmarks", "icon", "diricon"],
+  "keywords": [
+    "desktop",
+    "favourites",
+    "bookmarks",
+    "icon",
+    "diricon"
+  ],
   "author": "Raffael Sahli <sahli@gyselroth.com>",
   "license": "MIT",
   "gypfile": true,

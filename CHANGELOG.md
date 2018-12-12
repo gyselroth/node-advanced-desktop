@@ -1,3 +1,10 @@
+## 1.0.3
+**Maintainer**: Raffael Sahli <sahli@gyselroth.net>\
+**Date**: Wed December 12 14:27:21 CET 2018
+
+* [FIX] fixed check linux file manager from xdg-mime query result (regex check)
+
+
 ## 1.0.2
 **Maintainer**: Raffael Sahli <sahli@gyselroth.net>\
 **Date**: Tue December 11 14:59:22 CET 2018
