@@ -1,3 +1,10 @@
+## 1.0.5
+**Maintainer**: Raffael Sahli <sahli@gyselroth.net>\
+**Date**: Thu December 13 16:42:54 CET 2018
+
+* [FIX] Add file:// protocol to linux nodeicon.setFolderIcon() if not yet set
+
+
 ## 1.0.4
 **Maintainer**: Raffael Sahli <sahli@gyselroth.net>\
 **Date**: Thu December 13 15:23:20 CET 2018
