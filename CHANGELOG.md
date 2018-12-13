@@ -1,3 +1,10 @@
+## 1.0.4
+**Maintainer**: Raffael Sahli <sahli@gyselroth.net>\
+**Date**: Thu December 13 15:23:20 CET 2018
+
+* [FIX] win32 case sensitive package names
+
+
 ## 1.0.3
 **Maintainer**: Raffael Sahli <sahli@gyselroth.net>\
 **Date**: Wed December 12 14:27:21 CET 2018
