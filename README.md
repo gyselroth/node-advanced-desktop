@@ -31,11 +31,11 @@ nodeIcon.setFolderIcon('/my/path/to/folder', icon).then(() => {
 });
 ```
 
-### Add item to sidebar `sidebar.addItem: Promise()`
+### Add item to sidebar `sidebar.ensureItem: Promise()`
 
-Adds an item, typically a folder, to the sidebar (folder bookmarks). 
-`sidebar.addItem(path, context)` accepts a context as seccond argument whereas you may specify additional configuration.
-**Note**: On win32 you are required to specify a [clsId](https://docs.microsoft.com/en-us/windows/desktop/com/clsid-key-hklm). You may also change the name of the sidebar entry on win32 using context.name (The default is the base folder name). 
+Adds an item, typically a folder, to the sidebar (folder bookmarks).
+`sidebar.ensureItem(path, context)` accepts a context as seccond argument whereas you may specify additional configuration.
+**Note**: On win32 you are required to specify a [clsId](https://docs.microsoft.com/en-us/windows/desktop/com/clsid-key-hklm). You may also change the name of the sidebar entry on win32 using context.name (The default is the base folder name).
 
 Additional notes for linux, if the linux distribution is supported depends what file manager is in use. Currently support for the followin file managers is implemented:
 
